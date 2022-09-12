@@ -2,21 +2,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        var BoxerWeight1 = 78.2; // Вес боксера 1
-        var BoxerWeight2 = 82.7; // Вес боксера 2
-        var allWeightBoxer = BoxerWeight2 + BoxerWeight1; // allWeightBxer - общий вес боксеров
+        var allTimeWork = 640; //Общее время работы поделенное на всех сотрудников
+        var TimeWork = 8; //Время потраченное одним сотрудником
+        var Worker = allTimeWork / TimeWork; //Работники = общее время работы / время потраченное одним сотрудником
+        System.out.println("Всего работников в компании – " + Worker + " человек");
 
-        //Решение 6 задания
-        //System.out.println("Общий вес бойцов " + allWeightBoxer + " кг");
-        //var differenceWeightBoxer = BoxerWeight2 - BoxerWeight1;
-        //System.out.println("разница в весе у бойцов " + differenceWeightBoxer + " кг");
-
-        //Решение 7 задания
-        var differenceWeightBoxer = (BoxerWeight2 - BoxerWeight1) % allWeightBoxer; // differenceWeightBoxer - разница в весе боксёров.
-        System.out.println("разница в весе у бойцов " + differenceWeightBoxer + " кг!"); //решение задачи с помощью %
-
-        //var differenceWeightBoxer = BoxerWeight2 - BoxerWeight1;
-        //System.out.println("Разница в весе у бойцов " + differenceWeightBoxer + " кг!"); //решение задачи с помощью вычитания
+        Worker = Worker + 94;
+        allTimeWork = Worker * TimeWork;
+        System.out.println("Если в компании работает "+ Worker + " человек, то всего " + allTimeWork + " часов работы может быть поделено между сотрудниками");
 
 
 
